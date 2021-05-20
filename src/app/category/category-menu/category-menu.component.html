@@ -1,0 +1,5 @@
+<div class="list-group ">
+    <div *ngFor="let category of categories" class="category">
+        <a (click)="setCategory(category.id)" class="list-group-item" [ngClass]="{'active': selectedCategoryId === category.id }">{{ category.name }}</a>
+    </div>
+</div>
